@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+
+<script>
+    function sorteia() {
+
+        return Math.round(Math.random() * 10);
+
+    }
+    var segredos = [];
+    segredos.push(sorteia());
+    segredos.push(sorteia());
+    segredos.push(sorteia());
+    segredos.push(sorteia());
+
+    document.write(segredos);
+    document.write('<br>');
+
+    function sortArray(quantidade) {
+        for(var posicao = 0; posicao < quantidade; posicao++){
+
+            list.push(parseInt(prompt('Digite o numero:')));
+        
+        }
+        return list
+    }
+    var num = parseInt(prompt('Quantos numeros voce quer digitar? '));
+
+    var list = [];
+
+    var lista = [];
+    var array = sortArray(num);
+    document.write(array);
+
+    var nume = parseInt(prompt('Quantos numeros voce quer digitar? '));
+
+    while(lista.length < nume) {
+
+        lista.push(parseInt(prompt('Digite o numero:')));
+
+    }
+    document.write(lista);
+    
+</script>

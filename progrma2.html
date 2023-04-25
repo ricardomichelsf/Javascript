@@ -1,0 +1,30 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    function desenhaQuadrado(x, y) {
+
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+
+        pincel.fillStyle = 'green';
+        pincel.fillRect(x, y, 50, 50);
+        pincel.strokeStyle = 'white';
+        pincel.strokeRect(x, y, 50, 50);
+
+    }
+
+    function repeteQuadra(inic, fim) {
+
+        for(var conta = 0; conta <= 7; conta++){
+            desenhaQuadrado(inic, fim);
+            inic += 100;
+        }
+
+    }
+    var x = repeteQuadra(0, 0);
+    
+    
+    
+    
+</script>
